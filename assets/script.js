@@ -25,7 +25,11 @@ function generatePassword() {
   var characters = "abcdefgh";
   var password = "";
 
-
+  //declare boolean, and ask user input
+  useLowerCase = confirm("Do you want to use lowercase characters?");
+  useUpperCase = confirm("Do you want to use uppercase characters?");
+  useNumber = confirm("Do you want to use numeric characters?");
+  useSpecial = confirm("Do you want to use special characters?");
 
   for (var i = 0; i < 8; i++) {
     var randomNumber = Math.floor(Math.random() * characters.length);
