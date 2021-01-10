@@ -13,6 +13,12 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function generatePassword () {
-  
+//Creating a function for generating the password
+function generatePassword() {
+  var characters = "abcdefgh";
+  var password = "";
+  for (var i = 0; i < 8; i++) {
+    var randomNumber = Math.floor(Math.random() * characters.length);
+    password = password + characters[randomNumber];
+  }
 }
