@@ -20,10 +20,19 @@ upperCase = ["A", "B", "C", "D", "E", "F", "G", "H"];
 numberChar = ["1", "2", "3", "4", "5", "6", "7", "8"]
 specialChar = ["!", "@", "#", "$", "*", ";", "?", ':']
 
+//Prompt for user to
+window.onload = alert("Welcome! Please click 'Generate Password' to start!");
+
 //Creating a function for generating the password
 function generatePassword() {
   var characters = "abcdefgh";
   var password = "";
+
+  //Set variables
+  var charLength = prompt("How many characters would you like your password to be?");
+  if (charLength < 8 || charLength > 128) {
+    alert("It is reccomended to have a password between 8 and 128 characters long! Please start over.");
+  }
 
   //declare boolean, and ask user input
   useLowerCase = confirm("Do you want to use lowercase characters?");
@@ -37,4 +46,5 @@ function generatePassword() {
   }
 }
 
+//generateButton.onclick = generatePassword;
 
