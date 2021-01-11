@@ -14,11 +14,11 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 //create arrays for uppercase, lowercase, numbers and special characters
-caseArray = [];
-lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h"];
-upperCase = ["A", "B", "C", "D", "E", "F", "G", "H"];
-numberChar = ["1", "2", "3", "4", "5", "6", "7", "8"]
-specialChar = ["!", "@", "#", "$", "*", ";", "?", ':']
+var caseArray = [];
+var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h"];
+var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H"];
+var numberChar = ["1", "2", "3", "4", "5", "6", "7", "8"]
+var specialChar = ["!", "@", "#", "$", "*", ";", "?", ':']
 
 //Prompt for user to
 window.onload = alert("Welcome! Please click 'Generate Password' to start!");
@@ -48,3 +48,7 @@ function generatePassword() {
 
 //generateButton.onclick = generatePassword;
 
+//Bonus - copy to clipboard
+document.querySelector("textarea").select();
+document.execCommand("Copy");
+alert("Password copied to Clipboard!");
