@@ -14,11 +14,15 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 //create arrays for uppercase, lowercase, numbers and special characters
-var caseArray = [];
+
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h"];
+var lowerCaseArr = lowerCase.split("");
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H"];
+var upperCaseArr = upperCase.split("");
 var numberChar = ["1", "2", "3", "4", "5", "6", "7", "8"]
+var numberCharArr = numberChar.split("");
 var specialChar = ["!", "@", "#", "$", "*", ";", "?", ':']
+var specialCharArr = specialChar.split("");
 
 //Prompt for user to
 window.onload = alert("Welcome! Please click 'Generate Password' to start!");
@@ -26,6 +30,7 @@ window.onload = alert("Welcome! Please click 'Generate Password' to start!");
 //Creating a function for generating the password
 function generatePassword() {
   var characters = "abcdefgh";
+  var caseArray = [];
   var password = "";
 
   //Set variables
