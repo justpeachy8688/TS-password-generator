@@ -10,4 +10,4 @@
 
 [Link to deployed application](https://justpeachy8688.github.io/TS-password-generator)
 
-![Example Screenshot]
+![Example Screenshot](assets/password.png)
