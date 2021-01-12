@@ -30,6 +30,7 @@ function getPasswordOptions() {
   var charLength = parseInt(prompt("How many characters would you like your password to be?"));
   if (isNaN(charLength)) {
     alert("Please provide a valid number.");
+    // console.log(charLength.length)
     return;
   }
   if (charLength < 8 || charLength > 128) {
@@ -50,7 +51,7 @@ function getPasswordOptions() {
   var passOptions = {
     charLength: charLength, useLowerCase: useLowerCase, useUpperCase: useUpperCase, useNumber: useNumber, useSpecial: useSpecial
   };
-  console.log(passOptions);
+  // console.log(passOptions);
   return passOptions;
 }
 
