@@ -104,6 +104,9 @@ function generatePassword() {
 //generateButton.onclick = generatePassword;
 
 //Bonus - copy to clipboard
-// document.querySelector("textarea").select();
-// document.execCommand("Copy");
-// alert("Password copied to Clipboard!");
+function copyPass() {
+
+  document.querySelector("textarea").select();
+  document.execCommand("Copy");
+  alert("Password copied to clipboard!");
+}
