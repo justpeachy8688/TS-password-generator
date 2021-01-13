@@ -29,7 +29,7 @@ To satisfy the second, third and fourth, a series of prompts are used to determi
 
 To satisfy the fifth, the character prompts are checked to see if all are false. If so, the questions are asked again. The password length prompt checks for input above or below a certain threshold as well as NaN, null, and inputs that are not numbers.
 
-
+To satisfy the sixth, four character arrays are created with uppercase letters, lowercase letters, special characters, and numbers. Arrays to be included in password generation are pushed into an array.  A loop is run for the length of the password, and two random numbers are generated. The first random number chooses which character array will be used and the second chooses a random character from the selected array. The character is then concatenated into a password string variable.
 
 [Link to deployed application](https://justpeachy8688.github.io/TS-password-generator)
 
