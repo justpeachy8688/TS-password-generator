@@ -23,6 +23,13 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 ## Satisfying acceptance criteria
+To satisfy the first, I created a button in my html that, when clicked, would start the password generator script.
+
+To satisfy the second, third and fourth, a series of prompts are used to determine exactly  which characters the user would like to use as well as how many character in the password are desired.
+
+To satisfy the fifth, the character prompts are checked to see if all are false. If so, the questions are asked again. The password length prompt checks for input above or below a certain threshold as well as NaN, null, and inputs that are not numbers.
+
+
 
 [Link to deployed application](https://justpeachy8688.github.io/TS-password-generator)
 
