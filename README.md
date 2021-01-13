@@ -31,6 +31,8 @@ To satisfy the fifth, the character prompts are checked to see if all are false.
 
 To satisfy the sixth, four character arrays are created with uppercase letters, lowercase letters, special characters, and numbers. Arrays to be included in password generation are pushed into an array.  A loop is run for the length of the password, and two random numbers are generated. The first random number chooses which character array will be used and the second chooses a random character from the selected array. The character is then concatenated into a password string variable.
 
+To satisfy the seventh, The script has updated the HTML page to show the password that has been generated.
+
 [Link to deployed application](https://justpeachy8688.github.io/TS-password-generator)
 
 ![Example Screenshot](assets/password.png)
