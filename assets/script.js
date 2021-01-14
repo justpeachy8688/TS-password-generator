@@ -38,6 +38,8 @@ function getPasswordOptions() {
     return;
   }
 
+  // console.log(charLength);
+
   //declare boolean, and ask user input
   useLowerCase = confirm("Do you want to use lowercase characters?");
   useUpperCase = confirm("Do you want to use uppercase characters?");
@@ -51,7 +53,9 @@ function getPasswordOptions() {
   var passOptions = {
     charLength: charLength, useLowerCase: useLowerCase, useUpperCase: useUpperCase, useNumber: useNumber, useSpecial: useSpecial
   };
+
   // console.log(passOptions);
+
   return passOptions;
 }
 
@@ -97,7 +101,10 @@ function generatePassword() {
     passArray[i] = guaranteedChar[i]
 
   }
-  console.log(passArray)
+  // console.log(passArray);
+  // console.log(possibleChar);
+  // console.log(guaranteedChar);
+
   return passArray.join("");
 }
 
