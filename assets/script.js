@@ -34,7 +34,7 @@ function getPasswordOptions() {
     return;
   }
   if (charLength < 8 || charLength > 128) {
-    alert("It is reccomended to have a password between 8 and 128 characters long! Please start over.");
+    alert("It is recommended to have a password between 8 and 128 characters long! Please start over.");
     return;
   }
 
@@ -63,7 +63,7 @@ function randomElement(arr) {
 
 function generatePassword() {
   var options = getPasswordOptions()
-  // chararcters to be chosen for the password
+  // characters to be chosen for the password
   var possibleChar = [];
   // each type of chosen character to ensure each will be used
   var guaranteedChar = [];
