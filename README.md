@@ -37,4 +37,4 @@ To satisfy the sixth, four character arrays are created with uppercase letters, 
 To satisfy the seventh, The script has updated the HTML page to show the password that has been generated.
 <br>
 
-![Example Screenshot](assets/password.png)
+![Example Screenshot](assets/password2.png)
