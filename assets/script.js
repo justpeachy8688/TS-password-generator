@@ -103,7 +103,7 @@ function generatePassword() {
 
 //generateButton.onclick = generatePassword;
 
-//Bonus - copy to clipboard
+//Extra - copy to clipboard
 function copyPass() {
 
   document.querySelector("textarea").select();
